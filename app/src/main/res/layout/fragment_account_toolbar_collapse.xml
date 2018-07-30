@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/account_toolbar_height">
+
+    <TextView
+        android:id="@+id/toolbar_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/account_toolbar_margin_left"
+        android:layout_alignParentLeft="true"
+        android:textSize="@dimen/account_toolbar_text_size"
+        android:textColor="@color/white"
+        android:text="@string/app_name" />
+
+    <ImageView
+        android:id="@+id/iv_transfer"
+        android:layout_width="@dimen/account_toolbar_image_size"
+        android:layout_height="@dimen/account_toolbar_image_size"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@id/iv_collection"
+        android:layout_marginRight="@dimen/account_toolbar_margin_right"
+        android:src="@drawable/transfer"/>
+
+    <ImageView
+        android:id="@+id/iv_collection"
+        android:layout_width="@dimen/account_toolbar_image_size"
+        android:layout_height="@dimen/account_toolbar_image_size"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@id/iv_account_import"
+        android:layout_marginRight="@dimen/account_toolbar_margin_right"
+        android:src="@drawable/collection"/>
+
+    <ImageView
+        android:id="@+id/iv_account_import"
+        android:layout_width="@dimen/account_toolbar_image_size"
+        android:layout_height="@dimen/account_toolbar_image_size"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@id/iv_account_add"
+        android:layout_marginRight="@dimen/account_toolbar_margin_right"
+        android:src="@drawable/importaccount"/>
+
+    <ImageView
+        android:id="@+id/iv_account_add"
+        android:layout_width="@dimen/account_toolbar_image_size"
+        android:layout_height="@dimen/account_toolbar_image_size"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/account_toolbar_margin_right"
+        android:src="@drawable/createaccount"/>
+</RelativeLayout>

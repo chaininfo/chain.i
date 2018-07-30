@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/token_toolbar_height">
+
+    <TextView
+        android:id="@+id/toolbar_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/token_toolbar_margin_left"
+        android:layout_alignParentLeft="true"
+        android:textSize="@dimen/token_toolbar_text_size"
+        android:textColor="@color/white"
+        android:text="=$0.00" />
+
+    <ImageView
+        android:id="@+id/iv_token_add"
+        android:layout_width="@dimen/token_toolbar_image_size"
+        android:layout_height="@dimen/token_toolbar_image_size"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/token_toolbar_margin_right"
+        app:srcCompat="@drawable/ic_add_circle_white24dp"/>
+
+</RelativeLayout>

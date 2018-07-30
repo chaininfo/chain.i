@@ -3,4 +3,16 @@
     <color name="colorPrimary">#3F51B5</color>
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
+    <color name="black_overlay">#66000000</color>
+    <color name="login_start">#1566DF</color>
+    <color name="login_end">#3083FF</color>
+    <color name="white">#ffffff</color>
+    <color name="black">#000000</color>
+    <color name="line">#FFF5F5F5</color>
+    <color name="gray">#646464</color>
+
+    <color name="permissionColorGreen">#41c236</color>
+    <color name="permissionColorWhite">#ffffff</color>
+    <color name="permissionBgColorGreenLight">#44A49C</color>
+    <color name="permissionBgColorBlue">#ee447AA4</color>
 </resources>

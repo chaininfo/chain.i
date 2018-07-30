@@ -1,0 +1,29 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="info.chain.chaini.activity.MeFragment">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/me_toolbar_layout"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/me_toolbar_height"
+            app:layout_collapseMode="pin"
+            app:contentInsetStart="0.0dp"
+            app:popupTheme="@style/AppTheme.PopupOverlay">
+
+        <include android:id = "@+id/me_toolbar"
+            layout="@layout/fragment_me_toolbar"/>
+
+        </android.support.v7.widget.Toolbar>
+    </android.support.design.widget.AppBarLayout>
+
+    <include layout="@layout/fragment_me_content_scrolling" />
+
+</FrameLayout>

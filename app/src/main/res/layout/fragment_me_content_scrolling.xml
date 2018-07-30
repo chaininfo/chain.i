@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="info.chain.chaini.activity.MainActivity"
+    tools:showIn="@layout/fragment_me">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent">
+
+        <ImageView
+            android:id="@+id/user_img"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="60dp"
+            android:src="@mipmap/ic_launcher_round"/>
+
+        <TextView
+            android:id="@+id/user_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/user_img"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:text="@string/app_name"
+            android:textColor="@color/black"
+            android:textSize="16dp"/>
+
+        <LinearLayout
+            android:id="@+id/ll_content"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:layout_below="@id/user_name"
+            android:layout_marginTop="40dp"
+            android:orientation="vertical"
+            android:paddingLeft="30dp">
+            <TextView
+                android:id="@+id/chain_setting"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_marginBottom="10dp"
+                android:clickable="true"
+                android:drawableLeft="@mipmap/message_center"
+                android:drawablePadding="20dp"
+                android:gravity="left|center_vertical"
+                android:text="@string/chain_manager_text"
+                android:textColor="@color/black"
+                android:textSize="14dp"/>
+            <TextView
+                android:id="@+id/message_center"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginBottom="10dp"
+                android:clickable="true"
+                android:drawableLeft="@mipmap/message_center"
+                android:drawablePadding="20dp"
+                android:gravity="left|center_vertical"
+                android:text="@string/message_center_text"
+                android:textColor="@color/black"
+                android:textSize="14dp"/>
+
+            <TextView
+                android:id="@+id/suggestion_feedback"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginBottom="10dp"
+                android:clickable="true"
+                android:drawableLeft="@mipmap/suggestion_feedback"
+                android:drawablePadding="20dp"
+                android:gravity="left|center_vertical"
+                android:text="@string/suggestion_feedback_text"
+                android:textColor="@color/black"
+                android:textSize="14dp"/>
+
+            <TextView
+                android:id="@+id/system_settings"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginBottom="10dp"
+                android:clickable="true"
+                android:drawableLeft="@mipmap/system_settings"
+                android:drawablePadding="20dp"
+                android:gravity="left|center_vertical"
+                android:text="@string/system_settings_text"
+                android:textColor="@color/black"
+                android:textSize="14dp"/>
+
+            <TextView
+                android:id="@+id/app_update"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginBottom="10dp"
+                android:clickable="true"
+                android:drawableLeft="@mipmap/app_update"
+                android:drawablePadding="20dp"
+                android:gravity="left|center_vertical"
+                android:text="@string/app_update_text"
+                android:textColor="@color/black"
+                android:textSize="14dp"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/logout_app"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@id/ll_content"
+            android:layout_marginTop="20dp"
+            android:clickable="true"
+            android:gravity="center"
+            android:text="@string/logout_text"
+            android:textColor="@color/black"
+            android:textSize="14dp"/>
+
+    </RelativeLayout>
+
+</android.support.v4.widget.NestedScrollView>

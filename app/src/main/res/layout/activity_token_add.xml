@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="false"
+    tools:context="info.chain.chaini.activity.TokenAddActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/token_add_appbar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/token_add_appbar_height"
+        android:fitsSystemWindows="false"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/token_add_toolbar_layout"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/token_add_toolbar_height"
+            app:layout_collapseMode="pin"
+            app:contentInsetStart="0.0dp"
+            app:popupTheme="@style/AppTheme.PopupOverlay">
+
+            <include
+                android:id="@+id/token_add_toolbar"
+                layout="@layout/activity_token_add_toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+        </android.support.v7.widget.Toolbar>
+    </android.support.design.widget.AppBarLayout>
+
+    <ProgressBar
+        android:id="@+id/import_progress"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="60dp"
+        android:visibility="gone" />
+
+    <include layout="@layout/activity_token_add_content" />
+
+</android.support.design.widget.CoordinatorLayout>

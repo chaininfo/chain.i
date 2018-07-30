@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="false"
+    android:id="@+id/coordination_layout"
+    tools:context="info.chain.chaini.activity.AccountImportActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/app_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/account_import_appbar_height"
+        android:fitsSystemWindows="false"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/account_import_toolbar_height"
+                app:layout_collapseMode="pin"
+                app:contentInsetStart="0.0dp"
+                app:popupTheme="@style/AppTheme.PopupOverlay">
+
+                <include
+                    android:id="@+id/account_import_toolbar"
+                    layout="@layout/activity_account_import_toolbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+            </android.support.v7.widget.Toolbar>
+    </android.support.design.widget.AppBarLayout>
+
+    <ProgressBar
+        android:id="@+id/import_progress"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="60dp"
+        android:visibility="gone" />
+
+    <include
+        layout="@layout/activity_account_import_content"
+        android:id="@+id/account_import_content"/>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab"
+        android:src="@mipmap/scan_code"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="1dp"
+        app:layout_anchor="@id/account_import_content"
+        app:layout_anchorGravity="bottom|end"
+        app:backgroundTint="@color/gray"
+        app:rippleColor="@color/black"
+        app:borderWidth="0dp" />
+
+</android.support.design.widget.CoordinatorLayout>

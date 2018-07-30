@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="@dimen/account_bar_margin">
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:id="@+id/ll_transfer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="@dimen/account_bar_image_size"
+                android:layout_height="@dimen/account_bar_image_size"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/transfer"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/account_bar_text_margin"
+                android:textSize="@dimen/account_bar_text_size"
+                android:maxLength="8"
+                android:text="@string/transfer_text"/>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:id="@+id/ll_collection"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="@dimen/account_bar_image_size"
+                android:layout_height="@dimen/account_bar_image_size"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/collection"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/account_bar_text_margin"
+                android:textSize="@dimen/account_bar_text_size"
+                android:maxLength="8"
+                android:text="@string/collection_text"/>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:id="@+id/ll_account_import"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="@dimen/account_bar_image_size"
+                android:layout_height="@dimen/account_bar_image_size"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/importaccount"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/account_bar_text_margin"
+                android:textSize="@dimen/account_bar_text_size"
+                android:maxLength="8"
+                android:text="@string/account_import_text"/>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:id="@+id/ll_account_add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="@dimen/account_bar_image_size"
+                android:layout_height="@dimen/account_bar_image_size"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/createaccount"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/account_bar_text_margin"
+                android:textSize="@dimen/account_bar_text_size"
+                android:maxLength="8"
+                android:text="@string/account_add_text"/>
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

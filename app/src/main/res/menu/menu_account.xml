@@ -1,0 +1,16 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="info.chain.chaini.activity.AccountActivity">
+    <item
+        android:id="@+id/action_account_import"
+        android:orderInCategory="100"
+        android:title="@string/account_import_text"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_account_add"
+        android:orderInCategory="100"
+        android:title="@string/account_add_text"
+        app:showAsAction="never" />
+</menu>
